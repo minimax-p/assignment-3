@@ -1,0 +1,144 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    /* 1. Resets the default margin on body */
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+a {
+    color: white;
+    padding-top: 16px;
+}
+figure {
+    margin: 0;
+}
+
+.container {
+    padding: 0 1rem;
+}
+
+.header {
+    background-color: #F2FAFF;  /* 2. Please find out the color from Figma */
+}
+
+.site-logo {
+    text-align: center;
+}
+
+.desktop {
+    display: none;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-top: 24px;
+}
+.footer{
+    background-color: #3987B8;
+    height: 140px;
+}
+
+.learning-objectives {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.learning-objectives .tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.curriculum {
+    border-spacing: 0;
+    width: 100%;
+    padding-bottom: 48px;
+}
+
+.curriculum thead td {
+    border-top: solid 2px #999999;
+    border-bottom: solid 1px #999999;
+}
+.curriculum tbody tr td{
+    border-top: solid 1px #999999;
+}
+.curriculum td {
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.curriculum tbody tr:last-child td {
+    border-bottom: solid 2px #999999;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0;
+        margin: 0 18rem;
+        max-width: 64rem;
+    }
+
+    .site-logo {
+        text-align: center;  /* 3. The logo aligns to the left on large screen */
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+    
+    .learning-objectives {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    a {
+        padding-top: 0;
+    }
+}
+
+.w-full {
+    width: 100%;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+/* 
+    4. Please create a utility CSS definition for margin-top: 32px;
+    4.1 Instead of using pixel unit please use the "rem" unit.
+    4.2 Use this CSS class to add virtical spacing above the <h1>.
+ */
+ .heading-margin{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+ }
+ .p-margin {
+    margin-bottom: 1.5rem;
+ }
+.objectives {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+}
+ .font-serif {
+    font-family: 'Roboto Serif', serif;
+ }
+.credits{
+    text-align: right;
+    padding-right: 8px;
+}
+
